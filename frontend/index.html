@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Willow Lake Cottage - Your Peaceful Retreat</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Willow Lake Cottage</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#availability">Availability</a></li>
+        <li><a href="#rates">Rates</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#book" class="btn-nav">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Willow Lake Cottage</h1>
+      <p class="tagline">Escape to tranquility on the waterfront</p>
+      <a href="#book" class="btn btn-primary btn-large">Request a Booking</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">Welcome to Your Retreat</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Nestled on the shores of a pristine lake, Willow Lake Cottage offers the perfect escape for families and couples seeking peace and natural beauty. Wake up to stunning water views, spend your days kayaking or fishing, and end each evening around the fire pit watching the sun set over the mountains.</p>
+          <p>Our cozy cottage features modern amenities while maintaining its rustic charm. Whether you're looking for adventure or simply want to unwind with a good book, you'll find everything you need for an unforgettable getaway.</p>
+        </div>
+        <div class="amenities">
+          <h3>Amenities</h3>
+          <ul class="amenities-list">
+            <li>Private dock & lakefront access</li>
+            <li>Kayaks, canoe & life vests</li>
+            <li>Fully equipped kitchen</li>
+            <li>Washer & dryer</li>
+            <li>WiFi & Smart TV</li>
+            <li>Fire pit & outdoor seating</li>
+            <li>Gas grill & picnic table</li>
+            <li>Linens & towels provided</li>
+            <li>Parking for 2 vehicles</li>
+            <li>Board games & outdoor games</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="photos" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Photo Gallery</h2>
+      <div class="gallery" id="gallery">
+        <div class="gallery-placeholder">Photos will appear here once uploaded</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="availability" class="section">
+    <div class="container">
+      <h2 class="section-title">Availability</h2>
+      <p class="section-intro">Check available dates for your stay</p>
+      <div class="calendar" id="availabilityCalendar">
+        <div class="calendar-loading">Loading availability...</div>
+      </div>
+      <div class="calendar-legend">
+        <span class="legend-item"><span class="legend-dot available"></span> Available</span>
+        <span class="legend-item"><span class="legend-dot booked"></span> Booked</span>
+        <span class="legend-item"><span class="legend-dot blocked"></span> Unavailable</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="rates" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Rates & Pricing</h2>
+      <div class="rates-grid" id="ratesGrid">
+        <div class="rate-card">
+          <h3>Nightly</h3>
+          <p class="rate-price" id="nightlyRate">$175</p>
+          <p>per night</p>
+        </div>
+        <div class="rate-card">
+          <h3>Weekly</h3>
+          <p class="rate-price" id="weeklyRate">$1,000</p>
+          <p>per week (save 14%)</p>
+        </div>
+        <div class="rate-card">
+          <h3>Cleaning</h3>
+          <p class="rate-price" id="cleaningFee">$85</p>
+          <p>one-time fee</p>
+        </div>
+      </div>
+      <p class="rates-note">Maximum <span id="maxGuests">8</span> guests. Rates subject to change. Contact us for custom requests.</p>
+    </div>
+  </section>
+
+  <section id="location" class="section">
+    <div class="container">
+      <h2 class="section-title">Location</h2>
+      <div class="location-content">
+        <div class="location-info">
+          <h3>Find Us</h3>
+          <p>Willow Lake Cottage is located in the heart of thelake region, just 2 hours from the city. Our property sits on a quiet stretch of shoreline with direct lake access and stunning mountain views.</p>
+          <address>
+            <strong>Address:</strong><br>
+            123 Lakeshore Drive<br>
+            Willow Bay, State 12345<br>
+            <br>
+            <strong>Directions:</strong> Take Highway 12 to Lake Road, turn left at the marina, follow signs for Willow Bay Resort.
+          </address>
+        </div>
+        <div class="location-map">
+          <img src="https://placehold.co/600x400/8B7355/FEFCF9?text=Lake+Region+Map" alt="Map of the lake region showing cottage location" class="map-placeholder">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Request a Booking</h2>
+      <p class="section-intro">Fill out the form below and we'll get back to you within 24 hours</p>
+      <form class="booking-form" id="bookingForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="guests">Number of Guests *</label>
+            <select id="guests" name="guests" required>
+              <option value="1">1 guest</option>
+              <option value="2">2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+              <option value="6">6 guests</option>
+              <option value="7">7 guests</option>
+              <option value="8">8 guests</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="checkIn">Check-in Date *</label>
+            <input type="date" id="checkIn" name="checkIn" required>
+          </div>
+          <div class="form-group">
+            <label for="checkOut">Check-out Date *</label>
+            <input type="date" id="checkOut" name="checkOut" required>
+          </div>
+        </div>
+        <div class="form-group full-width">
+          <label for="message">Special Requests or Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your trip, any special occasions, or questions..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-large" id="submitBtn">Submit Booking Request</button>
+        <div class="form-message" id="formMessage"></div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>Willow Lake Cottage</h3>
+          <p>Your peaceful waterfront retreat since 2018</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#photos">Photos</a>
+          <a href="#availability">Availability</a>
+          <a href="#rates">Rates</a>
+          <a href="#book">Book</a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2024 Willow Lake Cottage. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
