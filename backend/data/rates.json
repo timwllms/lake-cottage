@@ -1,0 +1,6 @@
+{
+  "nightly": 250,
+  "weekly": 1250,
+  "cleaningFee": 85,
+  "maxGuests": 2
+}
